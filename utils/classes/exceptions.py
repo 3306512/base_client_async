@@ -1,5 +1,5 @@
 class InvalidLibArg(Exception):
     """
-    Just an empty custom exception
+    Just an empty custom exception xdd
     """
     pass

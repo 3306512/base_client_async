@@ -53,8 +53,8 @@ class BaseClient:
         get method
         :param lib: supports either 'aio' for aiohttp or 'httpx' for httpx
         :param endpoint: endpoint to get
-        :param params: will write later
-        :param kwargs: will write later
+        :param params: will write later prob
+        :param kwargs: will write later prob
         :return: awaits protected method and returns aiohttp.ClientResponse or httpx.Response
         """
         return await self._request(lib=lib, method=HTTPMethod.GET, endpoint=endpoint, data=None, params=params, **kwargs)

@@ -14,6 +14,10 @@ urls: list = [
 
 
 async def main():
+    """
+    Just start point
+    :return: -
+    """
     async with httpx.AsyncClient() as client_x, aiohttp.ClientSession() as session_aio:
         base = BaseClient(base_url="https://pokeapi.co", client_httpx=client_x, session_aio=session_aio)
         tasks_x: list = [base.get(lib='httpx', endpoint=url) for url in urls]
